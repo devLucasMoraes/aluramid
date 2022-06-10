@@ -3,7 +3,7 @@ const listaDeTeclas = document.querySelectorAll('.tecla')
 
 let contador = 0
 
-while (contador < listaDeTeclas.length) {
+for (contador =0 ;contador < listaDeTeclas.length; contador++) {
 
     const tecla = listaDeTeclas[contador]
     const instrumento = tecla.classList[1]
@@ -12,7 +12,6 @@ while (contador < listaDeTeclas.length) {
     tecla.onclick = function () {
         tocaSom(idSom)
     }
-    contador++
 }
 
 function tocaSom (classSom) {
